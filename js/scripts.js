@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ratingSelector.addEventListener("click", selectRating);
     });
 
-    submitBtn.setAttribute("disabled", true);
+    submitBtn.setAttribute("disabled", "true");
     submitBtn.addEventListener("click", () => submitRating(ratingNumber));
 
 });

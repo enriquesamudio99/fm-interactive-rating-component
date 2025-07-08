@@ -14,7 +14,7 @@
 
   <main class="main">
     <div class="container">
-      <div class="rating-card">
+      <div class="rating-card" id="rating-card">
         <div class="rating-card__content">
           <div class="rating-card__image-container">
             <img class="rating-card__image" src="./assets/images/icon-star.svg" alt="Star Icon">
@@ -26,26 +26,23 @@
             <button class="rate-selector__button" data-value="2">2</button>
             <button class="rate-selector__button" data-value="3">3</button>
             <button class="rate-selector__button" data-value="4">4</button>
-            <button class="rate-selector__button rate-selector__button--active" data-value="5">5</button>
+            <button class="rate-selector__button" data-value="5">5</button>
           </div>
-          <button class="rating-card__button button">Submit</button>
+          <button class="rating-card__button button" id="submit-button">Submit</button>
+        </div>
+      </div>
+      <div class="thank-you-card" id="thank-you-card">
+        <div class="thank-you-card__content">
+          <div class="thank-you-card__image-container">
+            <img class="thank-you-card__image" src="./assets/images/illustration-thank-you.svg" alt="Thank You Icon">
+          </div>
+          <p class="thank-you-card__rating">You selected <span class="thank-you-card__rating-value" id="rating-value">1</span> out of 5</p>
+          <h1 class="thank-you-card__title">Thank you!</h1>
+          <p class="thank-you-card__text">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
         </div>
       </div>
     </div>
   </main>
-
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don't hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
+  <script src="./assets/scripts/app.js"></script>
 </body>
 </html> 

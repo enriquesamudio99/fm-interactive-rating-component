@@ -126,6 +126,13 @@ a {
   transition: all .2s ease-in-out;
   cursor: pointer;
 }
+.button:disabled {
+  cursor: not-allowed;
+}
+
+.button:disabled:hover {
+  background-color: var(--clr-orange-500);
+}
 
 .button:hover {
   background-color: var(--clr-white);
@@ -203,6 +210,12 @@ a {
   margin: 2rem 0;
   background: var(--gradient-one);
   border-radius: .9375rem;
+}
+
+@media (min-width: 40rem) {
+  .rating-card {
+    border-radius: 1.875rem;
+  }
 }
 
 .rating-card__content {
@@ -283,3 +296,99 @@ a {
     margin-top: 2rem;
   }
 }
+
+/* Thank you card */
+
+.thank-you-card {
+  display: none;
+  margin: 2rem 0;
+  background: var(--gradient-one);
+  border-radius: .9375rem;
+}
+
+@media (min-width: 40rem) {
+  .thank-you-card {
+    border-radius: 1.875rem;
+  }
+}
+
+.thank-you-card__content {
+  padding: 2.25rem 1.5rem;
+}
+
+@media (min-width: 40rem) {
+  .thank-you-card__content {
+    padding: 2.7813rem 2.25rem;
+  }
+}
+
+.thank-you-card__image-container {
+  margin: 0 auto;
+  width: 9rem;
+  height: 6rem;
+}
+
+@media (min-width: 40rem) {
+  .thank-you-card__image-container {
+    width: 10.125rem;
+    height: 6.75rem;
+  }
+}
+
+.thank-you-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.thank-you-card__rating {
+  margin: 1.5rem auto 0;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  width: max-content;
+  padding: .375rem .75rem;
+  background-color: var(--clr-grey-900);
+  color: var(--clr-orange-500);
+  border-radius: 1.4063rem;
+}
+
+@media (min-width: 40rem) {
+  .thank-you-card__rating {
+    margin: 2rem auto 0;
+    padding: .375rem 1.2188rem;
+    font-size: .9375rem;
+  }
+}
+
+.thank-you-card__title {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  font-weight: 700;
+}
+
+@media (min-width: 40rem) {
+  .thank-you-card__title {
+    margin-top: 2rem;
+    font-size: 1.75rem;
+    line-height: 2.1875rem;
+  }
+}
+
+.thank-you-card__text {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: var(--clr-grey-500);
+}
+
+@media (min-width: 40rem) {
+  .thank-you-card__text {
+    font-size: .9375rem;
+    line-height: 1.5rem;
+  }
+}
+
